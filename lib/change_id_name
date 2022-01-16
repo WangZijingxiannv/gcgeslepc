@@ -1,0 +1,6 @@
+include ./Makefile
+
+install_name:
+ifeq ($(UNAME), Darwin)
+	@install_name_tool -id /home/hhxie/package/wzj/1slepc/slepczg0111/slepc/arch-linux-c-debug/lib/$(SONAMELIB) /home/hhxie/package/wzj/1slepc/slepczg0111/slepc/arch-linux-c-debug/lib/$(SONAMELIB)
+endif
